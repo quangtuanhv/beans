@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id = "cus1" class = "day2.Customer">
+	<property name="name" value = "Nguyen Van A"></property>
+	<property name="age" value = "21"></property>
+	<property name = "gender" value ="Male"></property>
+	<property name = "cmnd" value ="2116100101"></property>
+	</bean>
+	<bean id = "cus2" class = "day2.Customer">
+	<property name="name" value = "Nguyen Van B"></property>
+	<property name="age" value = "21"></property>
+	<property name = "gender" value ="Male"></property>
+	<property name = "cmnd" value ="2116100101"></property>
+	</bean>
+	<bean id = "cus3" class = "day2.Customer">
+	<property name="name" value = "Nguyen Van C"></property>
+	<property name="age" value = "21"></property>
+	<property name = "gender" value ="Male"></property>
+	<property name = "cmnd" value ="2116100101"></property>
+	</bean>
+	<bean id = "cus4" class = "day2.Customer">
+	<property name="name" value = "Nguyen Van D"></property>
+	<property name="age" value = "21"></property>
+	<property name = "gender" value ="Male"></property>
+	<property name = "cmnd" value ="2116100101"></property>
+	</bean>
+	
+</beans>

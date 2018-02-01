@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id = "cus1" class = "day7.Customer">
+		<property name="cmnd" value = "21102210"></property>
+		<property name="name" value = "Nguyễn Văn A"></property>
+		<property name="age" value = "21"></property>
+	</bean>
+	<bean id = "cus2" class = "day7.Customer">
+		<property name="cmnd" value = "21102221"></property>
+		<property name="name" value = "Nguyễn Văn B"></property>
+		<property name="age" value = "22"></property>
+	</bean>
+	<bean id = "cus3" class = "day7.Customer">
+		<property name="cmnd" value = "20102210"></property>
+		<property name="name" value = "Nguyễn Văn C"></property>
+		<property name="age" value = "19"></property>
+	</bean>
+	<bean id = "resort" class =  "day7.Resort">
+		<property name="id" value = "2123"></property>
+		<property name="customer">
+			<list>
+				<ref bean = "cus1"/>
+				<ref bean = "cus2"/>
+				<ref bean = "cus3"/>
+			</list>
+		</property>
+	</bean>
+	<bean id = "resort1" class =  "day7.Resort">
+		<property name="id" value = "1323"></property>
+		<property name="customer">
+			<list>
+				<ref bean = "cus3"/>
+				<ref bean = "cus2"/>
+				<ref bean = "cus1"/>
+			</list>
+		</property>
+	</bean>
+</beans>

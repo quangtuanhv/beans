@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id = "payment" class = "day5.Payment">
+		<constructor-arg>
+			<bean class = "day5.Order">
+				<property name="numDayStay" value = "5"></property>
+				<property name="totalPrice" value = "50.00"></property>
+				<property name="dateFounded" value = "26-01-2018"></property>
+			</bean>
+		</constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id = "cus1" class = "day8.Customer">
+		<property name="name" value = "Nguyen Van A"></property>
+		<property name="money" value = "#{500+500}"></property>
+		<property name="isVip" value = "#{cus1.money > 1000}"></property>
+		<property name="isDiscount"  value = "#{cus1.isVip == true or cus1.money >1000 }"></property>
+		<property name="isValidPhoneNumber" value = "#{'01695568454'matches'[0-9]'})"></property>
+	</bean>
+</beans>
